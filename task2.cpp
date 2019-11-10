@@ -12,7 +12,7 @@ int main()
 
 	if (a > b)
 	{
-		while(count + b <= a) count += b;
+		while(count + b <= a) count = count + b;
 
 		cout << "Длина незанятой части " << a - count << endl;
 	}
