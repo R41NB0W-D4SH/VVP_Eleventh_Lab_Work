@@ -9,16 +9,22 @@ int main()
 
     cout << "Введите A, затем B " << endl;
     cin >> a >> b;
-
-    for(i = a + 1; i < b; i++)
+	if (a > b)
 	{
-        for(j = 0; j < i; j++)
+	    for(i = a + 1; i < b; i++)
 		{
-			cout << i;
-		}
-        cout << endl;
-    }
-
+		for(j = 0; j < i; j++)
+			{
+				cout << i;
+			}
+		cout << endl;
+	    }
+	}
+	else 
+	{
+	cout << "A должен быть больше B. Следуйте условиям и попробуйте еще раз" << endl;
+	}
+	
 	system("pause");
     return 0;
 }
