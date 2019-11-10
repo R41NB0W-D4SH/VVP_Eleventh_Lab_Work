@@ -6,6 +6,7 @@ int main()
 {
 	setlocale(0, "");
     int n, k = 0, sum = 0;
+	
     cout << "Введите число N " << endl;
     cin >> n;
 
