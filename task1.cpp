@@ -5,26 +5,26 @@ using namespace std;
 int main()
 {
 	setlocale(0, "");
-    int a, b, i, j;
+	int a, b, i, j;
 
-    cout << "Введите A, затем B " << endl;
-    cin >> a >> b;
-	if (a > b)
+	cout << "Введите A, затем B " << endl;
+	cin >> a >> b;
+	if (a < b)
 	{
-	    for(i = a + 1; i < b; i++)
+		for (i = a + 1; i < b; i++)
 		{
-		for(j = 0; j < i; j++)
+			for (j = 0; j < i; j++)
 			{
 				cout << i;
 			}
-		cout << endl;
-	    }
+			cout << endl;
+		}
 	}
-	else 
+	else
 	{
-	cout << "A должен быть больше B. Следуйте условиям и попробуйте еще раз" << endl;
+		cout << "A должен быть меньше B. Следуйте условиям и попробуйте еще раз" << endl;
 	}
-	
+
 	system("pause");
-    return 0;
+	return 0;
 }
