@@ -5,34 +5,34 @@ using namespace std;
 int main()
 {
 	setlocale(0, "");
-    int a, b;
+	int a, b;
 
-    cout << "Введите A, затем B " << endl;
-    cin >> a >> b;
+	cout << "Введите A, затем B " << endl;
+	cin >> a >> b;
 
-    while(a != 0 && b != 0)
+	while (a != 0 && b != 0)
 	{
-        if(a < b)
-		{
-			b = b % a;
-		}
-        else 
+		if (a > b)
 		{
 			a = a % b;
 		}
-    }
-
-    cout << "НОД равен ";
-
-    if(a == 0)
-	{
-		cout << b;
+		else
+		{
+			b = b % a;
+		}
+		cout << "НОД равен ";
 	}
-    else
+
+
+	if (a == 0)
 	{
-		cout << a;
+		cout << b << endl;
+	}
+	else
+	{
+		cout << a << endl;
 	}
 
 	system("pause");
-    return 0;
+	return 0;
 }
