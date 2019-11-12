@@ -7,33 +7,33 @@ int main()
 	setlocale(0, "");
 	int a = 0, b = 1, temp, i, n;
 
-    cout << "Введите число N " << endl;
-    cin >> n;
-    
+	cout << "Введите число N " << endl;
+	cin >> n;
+
 	if (n > 1)
 	{
-		if(n == a)
-			{
-				i = 1;
+		if (n == a)
+		{
+			i = 1;
 		}
-		else if(n == b)
+		else if (n == b)
 		{
 			i = 2;
 		}
 		else
+		{
+			for (i = 3;; i++)
 			{
-				for(i = 3;;i++)
-				{
 				temp = a;
 				a = b;
 				b = a + temp;
-				if(b == n) 
-					{
-						break;
-					}
+				if (b == n)
+				{
+					break;
 				}
 			}
-		cout << "N это " << i << " порядковый номер числа Фиббоначи" << endl;
+		}
+		cout << "N это " << i << " порядковый номер числа Фибоначчи" << endl;
 	}
 	else
 	{
@@ -41,5 +41,5 @@ int main()
 	}
 
 	system("pause");
-    return 0;
+	return 0;
 }
